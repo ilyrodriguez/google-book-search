@@ -17,7 +17,7 @@ function Nav(props) {
         <a className="nav-link col-4 saved" href="/saved">Saved Books</a>
         </div>
         <div className="col-sm-2" id="imgDiv">
-          {/* <div id="bookImg" style={bookLogo}></div> */}
+          <div id="bookImg" style={bookLogo}></div>
           </div>
 
         <div className="row" id="intro">
