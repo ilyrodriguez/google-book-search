@@ -41,7 +41,24 @@ class Search extends React.Component {
         this.loadBooks();
     }
 
+    handleSaveBooks= (e) => {
+        console.log("Click");
+        e.preventDefault();
+        console.log(this.state.bookInput) 
+        let bookData = this.state.books.filter(book => book.id === e.target.id)
+        bookData = bookData[0];
+        
 
+        API.addBookToDB({
+            title: bookData.volumeInfo.title,
+            authors: bookData.volumeInfo.authors,
+            description: bookData.volumeInfo.description,
+            image: bookData.volumeInfo.imageLinks.thumbnail,
+            link: bookData.volumeInfo.infoLink
+            })
+            .then(this.setState({ message: alert("book saved") }))
+            .catch(err => console.log(err))
+    }
 
     render(){
         return(

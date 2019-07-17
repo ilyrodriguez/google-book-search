@@ -28,9 +28,9 @@ function BookResult(props) {
             <ul class='page'>
                 <li></li>
                 <li>
-                    <a class="btn" target="blank" href={book.volumeInfo.infoLink}>Link</a>
+                    <button class="btn" target="blank" href={book.volumeInfo.infoLink}>Link</button>
                     <span></span>
-                    <button class="btn" target="blank" onClick={() => this.handleSaveBook(book.id)}>Save</button>
+                    {/* <button class="btn" target="blank" id={book.id} onClick={(id) => this.handleSaveBooks(id)}>Save</button> */}
                 </li>
                 <li></li>
                 <li></li>
@@ -50,9 +50,9 @@ function BookResult(props) {
             <figcaption>
                 <h1>{book.volumeInfo.title}</h1>
                 <span></span>
-                <h5>{book.volumeInfo.authors}</h5>
+                <h5>Author: {book.volumeInfo.authors}</h5>
                 <span></span>
-                <p>{book.volumeInfo.description}</p>
+                <row className="desc">{book.searchInfo.textSnippet}</row>
             </figcaption>
         </figure>
     </li>

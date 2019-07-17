@@ -2,15 +2,27 @@
 // import API from "../utils/Api";
 // import NavSaved from "../components/Nav/NavSaved"
 // import Wrapper from "./Wrapper/index"
+// import SavedBookResult from "../components/BookResult"
 // import "./book.css";
-// import bookSaved from "../components/BookSaved"
 
-// const SavedBookResult = props => {
-//     return (props.BookSaved.length === 0) ? (
-//         <NavSaved />
-//     )};
-        
-//     render(props) {
+// class BookSaved extends Component {
+//     state = {
+//         BookSaved: []
+//     };
+
+//     componentDidMount() {
+//         API.getBooks()
+//             .then(res => this.setState({ BookSaved: res.data }))
+//             .catch(err => console.log(err))
+//     }
+
+//     handleDeleteButton = id => {
+//         API.deleteBook(id)
+//             .then(res => this.componentDidMount())
+//             .catch(err => console.log(err))
+//     }
+
+// render(props) {
 //         return(
 //             <div className="container-fluid">
 //             <NavSaved />
@@ -76,4 +88,7 @@
 //         )
 //         }
     
-// export default SavedBookResult;
+
+
+
+// export default BookSaved;

@@ -82,7 +82,7 @@
 
 .page-link {
     margin-left: 90%;
-    padding-top: 25px;
+    padding-top: 45px;
     color: white;
     text-decoration: none;
     z-index: 2;
@@ -92,6 +92,7 @@
 .title {
     margin-left: 29%;
     color: white;
+    margin-top: 5px;
 }
 a { 
     text-decoration: none; color:white; 
