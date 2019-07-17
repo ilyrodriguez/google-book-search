@@ -447,7 +447,9 @@ Table of Contents
 	-moz-transform: rotateX(90deg) rotateZ(90deg) translateZ(-210px) translateX(2px) translateY(-6px);
 	transform: rotateX(90deg) rotateZ(90deg) translateZ(-210px) translateX(2px) translateY(-6px);
 }
-
+#author{
+	font-weight: bold;
+}
 .page,
 .page > li {
 	position: absolute;
@@ -641,6 +643,7 @@ figcaption h1 {
 	margin-bottom: 30px;
 	font-size: 25px;
 	font-weight: bold;
+	margin-top: -15px;
 }
 figcaption h5 {
 	/* margin-bottom: 20px; */
