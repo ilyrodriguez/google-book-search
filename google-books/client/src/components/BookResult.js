@@ -28,7 +28,7 @@ function BookResult(props) {
             <ul class='page'>
                 <li></li>
                 <li>
-                    <button class="btn" target="blank" href={book.volumeInfo.infoLink}>Link</button>
+                    <a target="blank" href={book.volumeInfo.infoLink}><button class="btn">Link</button></a>
                     <span></span>
                     {/* <button class="btn" target="blank" id={book.id} onClick={(id) => this.handleSaveBooks(id)}>Save</button> */}
                 </li>
