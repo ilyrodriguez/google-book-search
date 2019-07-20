@@ -14,7 +14,7 @@ function Nav(props) {
     <nav className="navbar navbar-expand-lg navbar-dark">
         <div className="nav-tags">
         <div className="page-link">
-        <a className="nav-link col-4 saved" href="/saved">Saved Books</a>
+        <a className="nav-link col-4 saved" href="/saved">Saved <span></span>Books</a>
         </div>
         <div className="row" id="intro">
 

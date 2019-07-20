@@ -52,7 +52,7 @@ function BookResult(props) {
                 <span></span>
                 <h5>Author: {book.volumeInfo.authors}</h5>
                 <span></span>
-                <row className="desc">{book.searchInfo.textSnippet}</row>
+                <div className="desc">{book.searchInfo.textSnippet}</div>
             </figcaption>
         </figure>
     </li>
