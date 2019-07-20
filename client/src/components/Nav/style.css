@@ -42,18 +42,19 @@
     left: auto;
 }
 
-#container-fluid:before {
+/* #container-fluid:before {
     content: "";
     position: absolute;
     z-index: 1;
     top: 0;
     right: 0;
-    border-bottom: 130px solid rgb(250, 250, 250);
+    border-bottom: 130px solid hsl(0, 0%, 98%);
     border-right: 200px solid rgb(10, 10, 10);
     width: 0;
-
+    box-shadow: 0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
     border-radius: 0 0 0 5px;
-}
+} */
+
 
 #bookImg {
     position: absolute;
@@ -103,9 +104,9 @@ h5 {
     font-weight: lighter;
 }
 
-.saved{
+/* .saved{
     float: right;
     margin-left: 115px;
     margin-right: 45px;
     margin-top: -25px;
-}
+} */
